@@ -1,0 +1,557 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='acd3105a6b19aa11534693bac23255ae1a260cf6773b66f077cffdad1fdd7146' _.fcp.WorkbookFingerprinting.true...creator-author-id='acd3105a6b19aa11534693bac23255ae1a260cf6773b66f077cffdad1fdd7146' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='0964accdab3f58cc4115241a36868673593d714645905ee0c9b7865ebf06ebe8' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='0964accdab3f58cc4115241a36868673593d714645905ee0c9b7865ebf06ebe8' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Customer_Churn_Intelligence_Platform' inline='true' name='federated.13gvpx11vlmntv15ntewn06w7pva' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='customer_churn_tableau' name='textscan.0bwxzdh0dxh41515vulg410t9tvg'>
+            <connection class='textscan' directory='/Users/priyanshuranjan02/Projects and Courses/Customer Churn Prediction/Data' filename='customer_churn_tableau.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0bwxzdh0dxh41515vulg410t9tvg' name='customer_churn_tableau.csv' table='[customer_churn_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Gender' ordinal='0' />
+            <column datatype='string' name='Senior Citizen' ordinal='1' />
+            <column datatype='string' name='Partner' ordinal='2' />
+            <column datatype='string' name='Dependents' ordinal='3' />
+            <column datatype='integer' name='Tenure Months' ordinal='4' />
+            <column datatype='string' name='Phone Service' ordinal='5' />
+            <column datatype='string' name='Multiple Lines' ordinal='6' />
+            <column datatype='string' name='Internet Service' ordinal='7' />
+            <column datatype='string' name='Online Security' ordinal='8' />
+            <column datatype='string' name='Online Backup' ordinal='9' />
+            <column datatype='string' name='Device Protection' ordinal='10' />
+            <column datatype='string' name='Tech Support' ordinal='11' />
+            <column datatype='string' name='Streaming TV' ordinal='12' />
+            <column datatype='string' name='Streaming Movies' ordinal='13' />
+            <column datatype='string' name='Contract' ordinal='14' />
+            <column datatype='string' name='Paperless Billing' ordinal='15' />
+            <column datatype='string' name='Payment Method' ordinal='16' />
+            <column datatype='real' name='Monthly Charges' ordinal='17' />
+            <column datatype='real' name='Total Charges' ordinal='18' />
+            <column datatype='integer' name='CLTV' ordinal='19' />
+            <column datatype='string' name='Actual Churn' ordinal='20' />
+            <column datatype='real' name='Churn Probability' ordinal='21' />
+            <column datatype='string' name='Predicted Churn' ordinal='22' />
+            <column datatype='real' name='Churn Probability (%)' ordinal='23' />
+            <column datatype='string' name='Risk Category' ordinal='24' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Senior Citizen</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Senior Citizen]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Senior Citizen</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Partner]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Partner</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dependents]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Dependents</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure Months</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tenure Months]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Tenure Months</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phone Service</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Phone Service]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Phone Service</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Multiple Lines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Multiple Lines]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Multiple Lines</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Internet Service</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Internet Service]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Internet Service</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Online Security</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Online Security]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Online Security</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Online Backup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Online Backup]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Online Backup</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Device Protection</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Device Protection]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Device Protection</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tech Support</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tech Support]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Tech Support</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Streaming TV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Streaming TV]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Streaming TV</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Streaming Movies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Streaming Movies]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Streaming Movies</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Paperless Billing</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Paperless Billing]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Paperless Billing</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment Method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Payment Method]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Payment Method</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly Charges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Monthly Charges]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Monthly Charges</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Charges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Charges]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Total Charges</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLTV</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CLTV]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>CLTV</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Actual Churn]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Actual Churn</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn Probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Churn Probability]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Churn Probability</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Predicted Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Predicted Churn]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Predicted Churn</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn Probability (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Churn Probability (%)]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Churn Probability (%)</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Risk Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Risk Category]</local-name>
+            <parent-name>[customer_churn_tableau.csv]</parent-name>
+            <remote-alias>Risk Category</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cltv' datatype='integer' name='[CLTV]' role='measure' type='quantitative' />
+      <column caption='customer_churn_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='customer_churn_tableau.csv' id='customer_churn_tableau.csv_B14B5B26A4E64C65A35FA82AD2520F0E'>
+            <properties context=''>
+              <relation connection='textscan.0bwxzdh0dxh41515vulg410t9tvg' name='customer_churn_tableau.csv' table='[customer_churn_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Gender' ordinal='0' />
+                  <column datatype='string' name='Senior Citizen' ordinal='1' />
+                  <column datatype='string' name='Partner' ordinal='2' />
+                  <column datatype='string' name='Dependents' ordinal='3' />
+                  <column datatype='integer' name='Tenure Months' ordinal='4' />
+                  <column datatype='string' name='Phone Service' ordinal='5' />
+                  <column datatype='string' name='Multiple Lines' ordinal='6' />
+                  <column datatype='string' name='Internet Service' ordinal='7' />
+                  <column datatype='string' name='Online Security' ordinal='8' />
+                  <column datatype='string' name='Online Backup' ordinal='9' />
+                  <column datatype='string' name='Device Protection' ordinal='10' />
+                  <column datatype='string' name='Tech Support' ordinal='11' />
+                  <column datatype='string' name='Streaming TV' ordinal='12' />
+                  <column datatype='string' name='Streaming Movies' ordinal='13' />
+                  <column datatype='string' name='Contract' ordinal='14' />
+                  <column datatype='string' name='Paperless Billing' ordinal='15' />
+                  <column datatype='string' name='Payment Method' ordinal='16' />
+                  <column datatype='real' name='Monthly Charges' ordinal='17' />
+                  <column datatype='real' name='Total Charges' ordinal='18' />
+                  <column datatype='integer' name='CLTV' ordinal='19' />
+                  <column datatype='string' name='Actual Churn' ordinal='20' />
+                  <column datatype='real' name='Churn Probability' ordinal='21' />
+                  <column datatype='string' name='Predicted Churn' ordinal='22' />
+                  <column datatype='real' name='Churn Probability (%)' ordinal='23' />
+                  <column datatype='string' name='Risk Category' ordinal='24' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{143A8570-4C54-4813-8BA5-AA1C313B6296}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{12F23655-42B1-492D-8A33-6E10B449CE54}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
