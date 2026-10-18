@@ -216,7 +216,7 @@ with col3:
     )
 
 
-col4, col5, col6 = st.columns(3)
+col4, col5 = st.columns(2)
 
 with col4:
     monthly_charges = st.number_input(
@@ -234,15 +234,6 @@ with col5:
         max_value=10000.0,
         value=840.0,
         step=10.0
-    )
-
-with col6:
-    cltv = st.number_input(
-        "Customer Lifetime Value (CLTV)",
-        min_value=0.0,
-        max_value=10000.0,
-        value=5000.0,
-        step=100.0
     )
 
 
@@ -286,8 +277,7 @@ if predict_button:
         "Paperless_Billing": paperless_billing,
         "Payment_Method": payment_method,
         "Monthly_Charges": monthly_charges,
-        "Total_Charges": total_charges,
-        "CLTV": cltv
+        "Total_Charges": total_charges
     }
 
 
@@ -463,8 +453,7 @@ if predict_button:
                 "Paperless Billing": paperless_billing,
                 "Payment Method": payment_method,
                 "Monthly Charges": monthly_charges,
-                "Total Charges": total_charges,
-                "CLTV": cltv
+                "Total Charges": total_charges
             }])
 
 

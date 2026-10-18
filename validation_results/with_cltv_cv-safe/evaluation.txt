@@ -1,0 +1,37 @@
+Variant: With CLTV CV-safe
+
+Metrics:
+{
+  "Variant": "With CLTV CV-safe",
+  "Raw Predictors": 20,
+  "Processed Features": 31,
+  "Best CV ROC-AUC": 0.8650619093507819,
+  "Test Accuracy": 0.7974413646055437,
+  "Test Precision": 0.6369230769230769,
+  "Test Recall": 0.553475935828877,
+  "Test F1": 0.592274678111588,
+  "Test ROC-AUC": 0.8482562082300138,
+  "Test PR-AUC": 0.6614978209654903,
+  "TN": 915,
+  "FP": 118,
+  "FN": 167,
+  "TP": 207,
+  "Best Parameters": "{\"colsample_bytree\": 1.0, \"learning_rate\": 0.03, \"max_depth\": 3, \"n_estimators\": 300, \"subsample\": 0.8}",
+  "Runtime Seconds": 7.14
+}
+
+Classification report:
+              precision    recall  f1-score   support
+
+    No Churn     0.8457    0.8858    0.8652      1033
+       Churn     0.6369    0.5535    0.5923       374
+
+    accuracy                         0.7974      1407
+   macro avg     0.7413    0.7196    0.7288      1407
+weighted avg     0.7902    0.7974    0.7927      1407
+
+
+Confusion matrix:
+                 Predicted No Churn  Predicted Churn
+Actual No Churn                 915              118
+Actual Churn                    167              207

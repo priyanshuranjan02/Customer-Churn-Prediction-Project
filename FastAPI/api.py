@@ -147,13 +147,6 @@ class CustomerData(BaseModel):
         description="Total charges"
     )
 
-    CLTV: float = Field(
-        ...,
-        ge=0,
-        le=10000,
-        description="Customer lifetime value"
-    )
-
     model_config = {
         "json_schema_extra": {
             "example": {
@@ -176,7 +169,6 @@ class CustomerData(BaseModel):
                 "Payment_Method": "Electronic check",
                 "Monthly_Charges": 85.0,
                 "Total_Charges": 1020.0,
-                "CLTV": 5000.0
             }
         }
     }
@@ -257,8 +249,7 @@ def predict_churn(customer: CustomerData):
         "Paperless Billing": customer.Paperless_Billing,
         "Payment Method": customer.Payment_Method,
         "Monthly Charges": customer.Monthly_Charges,
-        "Total Charges": customer.Total_Charges,
-        "CLTV": customer.CLTV
+        "Total Charges": customer.Total_Charges
     }])
 
 

@@ -1,0 +1,25 @@
+{
+  "dataset": "Telco_customer_churn.csv",
+  "cleaned_rows": 7032,
+  "train_rows": 5625,
+  "test_rows": 1407,
+  "random_state": 42,
+  "test_size": 0.2,
+  "cv_folds": 5,
+  "scoring": "roc_auc",
+  "grid_candidates_per_variant": 108,
+  "two_tuned_variants_cv_fits": 1080,
+  "python": "3.11.15",
+  "pandas": "3.0.5",
+  "scikit_learn": "1.6.1",
+  "xgboost": "3.0.2",
+  "reported_notebook_reference": {
+    "accuracy": 0.8024,
+    "precision": 0.6491,
+    "recall": 0.5588,
+    "f1": 0.6006,
+    "roc_auc": 0.8481,
+    "pr_auc": 0.6627,
+    "cv_roc_auc": 0.8642
+  }
+}
